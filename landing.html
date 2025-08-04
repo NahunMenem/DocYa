@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DocYa | Salud a tu puerta</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#2563EB',
+            accent: '#10B981',
+            dark: '#1F2937',
+            brand: '#18b6a3'
+          }
+        }
+      }
+    };
+    window.onload = () => { lucide.createIcons(); };
+  </script>
+</head>
+<body class="bg-white text-gray-800">
+
+  <!-- NAVBAR -->
+  <header class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="#" class="flex items-center gap-2">
+        <img src="./img/logo.png" alt="Logo DocYa" class="h-20 w-auto">
+      </a>
+      <nav class="hidden md:flex space-x-6 font-medium">
+        <a href="#quees" class="hover:text-primary">¿Qué es?</a>
+        <a href="#pacientes" class="hover:text-primary">Para Pacientes</a>
+        <a href="#medicos" class="hover:text-primary">Para Médicos</a>
+        <a href="#descargar" class="hover:text-primary">Descargar</a>
+      </nav>
+      <a href="#descargar" class="bg-brand text-white px-4 py-2 rounded hover:bg-emerald-600 text-sm font-semibold transition">Solicitar atención</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-br from-primary to-brand text-white py-24 text-center animate__animated animate__fadeIn">
+    <div class="max-w-6xl mx-auto px-4">
+      <h1 class="text-5xl font-bold mb-4">Salud a tu puerta, sin esperas ni traslados</h1>
+      <p class="text-xl mb-6">Conectamos pacientes con médicos a domicilio en minutos. Rápido, seguro y sin guardias.</p>
+      <a href="#descargar" class="bg-white text-primary font-bold px-8 py-3 rounded-full shadow hover:bg-gray-100 transition">Quiero probar DocYa</a>
+    </div>
+  </section>
+
+  <!-- ¿QUÉ ES? -->
+  <section id="quees" class="py-20 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-3xl font-bold mb-4">¿Qué es DocYa?</h2>
+        <p class="text-gray-700 text-lg mb-4">Es una app tipo Uber que te conecta con médicos y enfermeros a domicilio. Pedís atención desde tu celular, y el profesional más cercano va a tu casa.</p>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-center gap-2"><i data-lucide="map-pin" class="w-5 h-5 text-accent"></i> Geolocalización en tiempo real</li>
+          <li class="flex items-center gap-2"><i data-lucide="alert-octagon" class="w-5 h-5 text-red-500"></i> Filtro de urgencias leves</li>
+          <li class="flex items-center gap-2"><i data-lucide="file-text" class="w-5 h-5 text-blue-500"></i> Historia clínica digital</li>
+          <li class="flex items-center gap-2"><i data-lucide="credit-card" class="w-5 h-5 text-green-500"></i> Pago desde la app</li>
+        </ul>
+      </div>
+      <img src="https://fotos.perfil.com/2023/05/18/trim/987/555/medico-de-familia-1570849.jpg"
+         alt="DocYa App"
+         class="rounded-xl shadow-lg border object-cover w-full h-auto max-h-[360px]">
+    </div>
+  </section>
+
+  <!-- PACIENTES -->
+  <section id="pacientes" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <h2 class="text-3xl font-bold mb-10">¿Por qué elegir DocYa?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <i data-lucide="clock" class="w-6 h-6 text-primary mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Atención inmediata</h4>
+          <p>Olvidate de las guardias. Un médico llega a tu casa en minutos.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <i data-lucide="map" class="w-6 h-6 text-accent mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Seguimiento en tiempo real</h4>
+          <p>Seguís al profesional en el mapa, como un Uber.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-lg shadow">
+          <i data-lucide="syringe" class="w-6 h-6 text-red-500 mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Enfermero bajo demanda</h4>
+          <p>¿Necesitás medicación? Un enfermero te la aplica según receta.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÉDICOS -->
+  <section id="medicos" class="py-20 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">¿Sos médico o enfermero?</h2>
+      <div class="grid md:grid-cols-3 gap-8 text-left">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i data-lucide="wallet" class="w-6 h-6 text-green-600 mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Ganá más en menos tiempo</h4>
+          <p>Una consulta paga mejor que una guardia. Elegís horarios y zonas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i data-lucide="star" class="w-6 h-6 text-yellow-400 mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Crecé con tu reputación</h4>
+          <p>Los pacientes te puntúan. A mejor reputación, más consultas.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <i data-lucide="check-circle" class="w-6 h-6 text-blue-600 mb-2"></i>
+          <h4 class="text-xl font-semibold mb-2">Sin trámites ni turnos</h4>
+          <p>Solo atendés. DocYa se encarga del resto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="descargar" class="bg-gradient-to-br from-brand to-primary text-white py-20 text-center">
+    <h2 class="text-3xl font-bold mb-4">¿Listo para un nuevo sistema de salud?</h2>
+    <p class="mb-6 text-lg">Descargá la app o registrate como profesional y unite al cambio.</p>
+    <div class="space-x-4">
+      <a href="#" class="bg-white text-primary px-5 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Descargar App</a>
+      <a href="#" class="bg-white text-primary px-5 py-3 rounded-full font-semibold shadow hover:bg-gray-100">Soy Profesional</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-white text-center py-6 text-sm">
+    © 2025 DocYa. Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
